@@ -95,8 +95,8 @@ function win32or64() {
 function download_openssl(callback) {
 
     var url = (win32or64() === 64 )
-            ? "http://indy.fulgan.com/SSL/openssl-1.0.2h-x64_86-win64.zip"
-            : "http://indy.fulgan.com/SSL/openssl-1.0.2h-i386-win32.zip"
+            ? "http://indy.fulgan.com/SSL/Archive/openssl-1.0.2h-x64_86-win64.zip"
+            : "http://indy.fulgan.com/SSL/Archive/openssl-1.0.2h-i386-win32.zip"
         ;
     var output_filename = path.join(__dirname,path.basename(url));
 
@@ -186,4 +186,3 @@ exports.install_prerequisite = function (callback) {
         });
     }
 };
-
